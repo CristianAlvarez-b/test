@@ -1,0 +1,32 @@
+{
+  "name": "azure-blob-trigger-function",
+  "version": "1.0.0",
+  "description": "Azure Function con Blob Storage Trigger",
+  "main": "dist/src/functions/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "func start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "lefthook install"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "azure-functions-core-tools": "^4.0.5455",
+    "eslint": "^8.55.0",
+    "lefthook": "^1.5.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
